@@ -1,0 +1,132 @@
+/* COMMON CSS STARTS HERE */
+:root {
+  --text-clr: black;
+  --bg-clr: white;
+}
+body {
+  background-color: var(--bg-clr);
+  transition: 0.35s;
+}
+.dark {
+  --text-clr: #fff;
+  --bg-clr: rgb(94, 92, 187);
+  transition: 0.25s;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+.container {
+  width: 1108px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.align_center {
+  align-items: center;
+}
+/* COMMON CSS ENDS HERE */
+
+nav {
+  background-color: #ddd;
+  padding: 20px 0;
+}
+nav button {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 32px;
+  cursor: pointer;
+}
+.sidebar {
+  background-color: rgba(106, 91, 91, 0.478);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.35s;
+}
+.sidebar.active {
+  opacity: 1;
+  visibility: visible;
+}
+.sidebar_cnt {
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  padding: 50px;
+  transform: translateX(-100%);
+  transition: 0.45s;
+}
+.sidebar.active .sidebar_cnt {
+  transform: translate(0);
+}
+.logo {
+  width: 99%;
+}
+.menu {
+  width: 1%;
+}
+.menu button {
+  background-color: transparent;
+  border: none;
+  font-size: 40px;
+  outline: none;
+  cursor: pointer;
+}
+.sidebar_cnt ul {
+  margin-top: 50px;
+  text-align: center;
+}
+.sidebar_cnt ul a {
+  color: black;
+  text-transform: capitalize;
+  margin-top: 25px;
+  display: block;
+}
+.mode {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mode h2 {
+  font-size: 90px;
+  margin-right: 20px;
+}
+.mode button {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.mode button span {
+  width: 100%;
+  height: 100%;
+  display: block;
+  font-size: 20px;
+  line-height: 40px;
+}
+.mode button .sun {
+  background-color: rgb(241, 241, 22);
+}
+.mode button .moon {
+  background-color: rgb(94, 92, 187);
+}
