@@ -4,47 +4,486 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JavaScript-3</title>
+  <title>Bizzency</title>
+  <link rel="stylesheet" href="./CSS/aos.css">
+  <link rel="stylesheet" href="./CSS/venobox.min.css">
   <link rel="stylesheet" href="./CSS/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./CSS/all.min.css">
 </head>
 
-<body class="dark">
-
-  <nav>
+<body>
+  <header>
     <div class="container">
-      <button class="navBtn">
-        <i class="bi bi-list"></i>
-      </button>
-    </div>
-  </nav>
-  <div class="sidebar ">
-    <div class="sidebar_cnt">
-      <div class="row align_center">
-        <div class="logo">
-          <img src="./images/logo.png" alt="" width="70px">
+      <div class="row">
+        <div class="wellcome">
+          <p>Welcome to our Company</p>
         </div>
-        <div class="menu">
-          <button class="crsBtn">x</button>
+        <div class="opening">
+          <p>Opening Hour: 08:00 a.m to 10:00 p.m</p>
         </div>
       </div>
-      <ul>
-        <li><a href="#">home</a></li>
-        <li><a href="#">home</a></li>
-        <li><a href="#">home</a></li>
-        <li><a href="#">home</a></li>
-        <li><a href="#">home</a></li>
-      </ul>
     </div>
-  </div>
-  <div class="mode">
-    <h2>Light Mode</h2>
-    <button class="darks">
-      <span class="sun"><i class="bi bi-brightness-high"></i></span>
-      <span class="moon"><i class="bi bi-moon-fill"></i></span>
-    </button>
-  </div>
-  <script src="./JS/apps.js"></script>
+  </header>
+  <nav>
+    <div class="container">
+      <div class="row">
+        <div class="logo" data-aos="fade-right" data-aos-duration="3000">
+          <a href="#"><img src="./images/Bizzency.jpg" alt=""></a>
+        </div>
+        <div class="menu" data-aos="fade-left" data-aos-duration="3000">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Porfolio</a></li>
+            <li><a href="#">Blogs<i class="fa-solid fa-angle-down"></i></a>
+
+              <ul class="submenu">
+                <li><a href="#">Blog 1</i></a>
+                  <!-- <ul class="sub">
+                    <li>Blog 1</li>
+                    <li>Blog 2</li>
+                    <li>Blog 3</li>
+                    <li>Blog 4</li>
+                  </ul> -->
+                </li>
+
+                <li><a href="#">Blog 2</a></li>
+                <li><a href="#">Blog 3</a></li>
+                <li><a href="#">Blog 4</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">Contact</a></li>
+            <button>
+              <li>
+                <i class="fa-solid fa-xmark"></i>
+              </li>
+            </button>
+            <button>
+              <li><i class="fa-solid fa-magnifying-glass"></i>
+              </li>
+            </button>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- banner -->
+  <section id="banner">
+    <div class="container">
+      <div class="banner_cnt">
+        <h3 data-aos="fade-up" data-aos-duration="1500">Your</h3>
+        <h2 data-aos="fade-up" data-aos-duration="1200">Success</h2>
+        <h4 data-aos="fade-up" data-aos-duration="1000">Our Ambition</h4>
+        <p data-aos="fade-up" data-aos-duration="800">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiumod tempor incididunt ut labore et dolore
+          magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <a data-aos="zoom-in" data-aos-duration="1500" class="ex" href="#">Explore More</a>
+        <a data-aos="zoom-in" data-aos-duration="1500" data-vbtype="video" class="myvideo popup"
+          href="https://youtu.be/RBz3vP6aD5w"><i class="fa-solid fa-play"></i></a>
+      </div>
+    </div>
+  </section>
+  <!-- banner ends-->
+  <!-- About us starts -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="text" data-aos="fade-up-right" data-aos-duration="1500">
+          <div class="heading">
+            <h4>Who we are</h4>
+            <h2>About us</h2>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodpor nt ut labore et dolore magna
+            aliqua. Ut enim
+            ad minim veniam, quis nostrud exion ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <h5>We are the best in the line, worldwide. <br>
+            No more wasting time, Eveeryone can animate.<br>
+            We work with orgnizations to craft immersive customer experience.<br>
+            We are committed to make your business successful.<br>
+            We can make your business successful that you had not ever think.</h5>
+          <div class="row">
+            <div class="Browse know">
+              <a href="#" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">Know More</a>
+            </div>
+            <div class="read" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+              <a href="#">Read Later</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="img" data-aos="fade-up-left" data-aos-duration="1500">
+          <img src="./images/About.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About us ends -->
+
+  <!-- skill starts -->
+  <section id="skill">
+    <div class="container">
+      <div class="row">
+        <div class="cartoon" data-aos="fade-right" data-aos-duration="1500">
+          <img src="./images/cartoon.jpg" alt="">
+        </div>
+        <div class="skills" data-aos="fade-left" data-aos-duration="1500">
+          <h5>What can we do?</h5>
+          <h2>Our Skills</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodpor <br>nt ut labore et dolore
+            magna
+            aliqua.</p>
+          <img src="./images/Screenshot.png" alt="" width="480px" height="230px">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- skill ends -->
+
+  <!-- Services Starts-->
+  <section id="service">
+    <div class="container">
+      <div class="abril">
+        <p>What we do?</p>
+        <h2 id="myElement">Our Frontend Services</h2>
+      </div>
+      <div class="row">
+        <div class="service_card" data-aos="fade-up" data-aos-duration="500">
+          <div class="pencil">
+            <img src="./images/pencil.png" alt="">
+          </div>
+          <div class="texts">
+            <h3>Ui/Ux Design</h3>
+            <p>Lorem ipsum dolor sit amet, cotur adipisicing elit, sed do eiusmodpor incididunt ut labore et dolore Amar
+              sonar Bangla
+              ami tomay.</p>
+          </div>
+          <div class="overlay">
+            <img src="./images/pencil.png" alt="">
+            <h3>Ui/Ux Design</h3>
+            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="service_card" data-aos="fade-up" data-aos-duration="1500">
+          <div class="pencil">
+            <img src="./images/web.png" alt="">
+          </div>
+          <div class="texts">
+            <h3>Web Design</h3>
+            <p>Lorem ipsum dolor sit amet, cotur adipisicing elit, sed do eiusmodpor incididunt ut labore et dolore
+              Amar
+              sonar Bangla
+              ami tomay.</p>
+          </div>
+          <div class="overlay">
+            <img src="./images/web.png" alt="">
+            <h3>Web Design</h3>
+            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="service_card" data-aos="fade-up" data-aos-duration="2000">
+          <div class="pencil">
+            <img src="./images/pen.png" alt="">
+          </div>
+          <div class="texts">
+            <h3>Video Editing</h3>
+            <p>Lorem ipsum dolor sit amet, cotur adipisicing elit, sed do eiusmodpor incididunt ut labore et dolore
+              Amar
+              sonar Bangla
+              ami tomay.</p>
+          </div>
+          <div class="overlay">
+            <img src="./images/pen.png" alt="">
+            <h3>Video Editing</h3>
+            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Services ends -->
+
+  <!-- Portfolio Starts-->
+  <section id="portfolio">
+    <div class="container">
+      <div class="abril">
+        <p>What we done before?</p>
+        <h2 id="Element">Our Portfolio</h2>
+      </div>
+      <div class="row">
+        <div class="card">
+          <a class="popup" data-gall="test" href="./images/home.png"><img src="./images/home.png" alt=""></a>
+          <div class="overlai">
+            <h3>Home Illustration</h3>
+          </div>
+        </div>
+
+        <div class="card">
+          <a class="popup" data-gall="test" href="./images/Girl.png"><img src="./images/Girl.png" alt=""
+              height="100%"></a>
+          <div class="overlai">
+            <h3>Girl Illustration</h3>
+          </div>
+        </div>
+        <div class="card">
+          <a class="popup" data-gall="test" href="./images/nature.png"><img src="./images/nature.png" alt=""></a>
+          <div class="overlai">
+            <h3>Cosmos Illustration</h3>
+          </div>
+        </div>
+      </div>
+      <div class="Browse margin" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+        <a href="#">Browse All</a>
+      </div>
+    </div>
+  </section>
+  <!-- Portfolio ends -->
+
+  <!-- testimonial Starts-->
+  <section id="testimonial">
+    <div class="container">
+      <div class="abril">
+        <p>
+          What people say?
+        </p>
+        <h2 id="ment">Our Testimonial</h2>
+      </div>
+      <div class="row">
+        <div class="testimonial_girl" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="linear">
+          <div class="row">
+            <div class="testimonial_image">
+              <img src="./images/sweety.png" alt="">
+            </div>
+            <div class="testimonial_texts">
+              <p>Lorem ipsum dolor sit amet, consectetur adipng elit, sed do eiusmod tempor incidt ut labore et dolore
+                magna aliqua. Ut
+                enim ad minim veniais nostrud exercitation ullamco.</p>
+              <h3>San Fransisco</h3>
+              <h4>CEO - Nation IT</h4>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial_boy" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="linear">
+          <div class="row">
+            <div class="testimonial_image">
+              <img src="./images/Devid-Bekham.png" alt="" ">
+            </div>
+            <div class=" testimonial_texts">
+              <p>Lorem ipsum dolor sit amet, consectetur adipng elit, sed do eiusmod tempor incidt ut labore et dolore
+                magna aliqua. Ut
+                enim ad minim veniais nostrud exercitation ullamco.</p>
+              <h3>Rane Fransisco</h3>
+              <h4>COO - Nation IT</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- testimonial ends -->
+
+  <!-- Blog Starts-->
+  <section id="blog">
+    <div class="container">
+      <div class="abril">
+        <p>
+          What happened recent?
+        </p>
+        <h2 id="men">Our Latest Blogs</h2>
+      </div>
+      <div class="row">
+        <div class="cartoon">
+          <img src="./images/Rat.png" alt="">
+          <p>26 October 2018</p>
+          <h3>38 things you should save in your business</h3>
+          <h4>Read More</h4>
+          <div class="overlay">
+            <img src="./images/Rat.png" alt="">
+            <p>26 October 2018</p>
+            <h3>38 things you should save in your business</h3>
+            <h4>Read More</h4>
+            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+        <div class="cartoon">
+          <img src="./images/Monkey.png" alt="">
+          <p>26 October 2018</p>
+          <h3>108 tips & tricks to make the business successful</h3>
+          <h4>Read More</h4>
+          <div class="overlay">
+            <img src="./images/Monkey.png" alt="">
+            <p>26 October 2018</p>
+            <h3>108 tips & tricks to make the business successful</h3>
+            <h4>Read More</h4>
+            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+        <div class="cartoon">
+          <img src="./images/Old.png" alt="">
+          <p>26 October 2018</p>
+          <h3>Make your footprint on the floor of world business</h3>
+          <h4>Read More</h4>
+          <div class="overlay">
+            <img src="./images/Old.png" alt="">
+            <p>26 October 2018</p>
+            <h3>Make your footprint on the floor of world business</h3>
+            <h4>Read More</h4>
+            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="Browse margin" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+        <a href="#">Browse All</a>
+      </div>
+    </div>
+  </section>
+  <!-- Blog ends -->
+
+  <!-- Footer Starts -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="footer" data-aos="zoom-in-right" data-aos-duration="2000">
+          <img src="./images/Bizzency.jpg" alt="">
+          <p>
+            Lorem Ipsum is simply dummy text ofing and typesetting industry. Lorem Ipsuasn the industry's standard dummy
+            text ever
+            since the 1500s. Lorem ipsum dolor sit amet, consectetur.
+          </p>
+          <div class="icons">
+            <ul>
+              <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-globe"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer" data-aos="zoom-in-right" data-aos-duration="2000">
+          <h3 class="Contacts">Contact Us</h3>
+          <div class="row">
+            <div class="icon contact">
+              <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+            </div>
+            <div class="info">
+              <p>1234, Park Street Avenue, NewYork
+                America.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="icon">
+              <a href="#"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+            <div class="info">
+              <p>information@adminrosui.com
+                helptotal@adminrosui.com</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="icon">
+              <a href="#"><i class="fa-solid fa-phone"></i></a>
+            </div>
+            <div class="info">
+              <p>+880 1234 5678 <br>
+                +880 9876 5432</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer link" data-aos="zoom-in-left" data-aos-duration="2000">
+          <h3 class="lnks">Important Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Our Portfolio</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="footer Filckr" data-aos="zoom-in-left" data-aos-duration="2000">
+          <h3 class="Filckr">Filckr Stream</h3>
+          <div class="row cnt">
+            <div class="stream">
+              <img src="./images/sweetys.png" alt="">
+            </div>
+            <div class="stream">
+              <img src="./images/design.png" alt="">
+            </div>
+            <div class=" stream">
+              <img src="./images/Rats.png" alt="">
+            </div>
+            <div class="stream">
+              <img src="./images/Monkeys.png" alt="">
+            </div>
+            <div class="stream">
+              <img src="./images/dog.png" alt="">
+            </div>
+            <div class="stream">
+              <img src="./images/cat.png" alt="">
+            </div>
+            <div class="stream">
+              <img src="./images/Olds.png" alt="">
+            </div>
+            <div class="stream">
+              <img src="./images/car.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Ends -->
+
+  <section id="down">
+    <div class="container">
+      <h4>Copyright 2018 <span>BIZZENCY</span> | All Rights Reserved | Designed By <span>DESIGNER</span></h4>
+    </div>
+  </section>
+
+  <!-- /* Filter Starts here */ -->
+  <section id="filter">
+    <div class="container">
+      <div class="btn_group">
+        <button type="button" data-filter="all">All</button>
+        <button type="button" data-filter=".men">Men</button>
+        <button type="button" data-filter=".women">Women</button>
+        <button type="button" data-filter=".child">Child</button>
+      </div>
+      <div class="wrapper">
+        <div class="mix product men">Men</div>
+        <div class="mix product men">Men</div>
+        <div class="mix product men">Men</div>
+        <div class="mix product men">Men</div>
+        <div class="mix product men">Men</div>
+        <div class="mix product women">Women</div>
+        <div class="mix product women">Women</div>
+        <div class="mix product women">Women</div>
+        <div class="mix product women">Women</div>
+        <div class="mix product women">Women</div>
+        <div class="mix product child">Child</div>
+        <div class="mix product child">Child</div>
+        <div class="mix product child">Child</div>
+        <div class="mix product child">Child</div>
+        <div class="mix product child">Child</div>
+      </div>
+    </div>
+  </section>
+  <!-- /* Filter Starts here */ -->
+
+  <section id="down">
+    <div class="container">
+      <h4>Copyright 2018 <span>BIZZENCY</span> | All Rights Reserved | Designed By <span>DESIGNER</span></h4>
+    </div>
+  </section>
+  <script src="./JS/jquery.js"></script>
+  <script src="./JS/venobox.min.js"></script>
+  <script src="./JS/aos.js"></script>
+  <script src="./JS/vanila.js"></script>
+  <script src="./JS/mixitup.min.js"></script>
+  <script src="./JS/app.js"></script>
 </body>
 
 </html>
